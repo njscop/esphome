@@ -62,9 +62,13 @@ void GT911::loop(){
         uint16_t dimension_two = (buf[1] << 8) | buf[0];
 
         switch (this->rotation_){
+	  //case ROTATE_0_DEGREES:
+          //  tp.x = dimension_one;
+          //  tp.y = this->display_height_ - dimension_two;
+          //  break;
           case ROTATE_0_DEGREES:
-            tp.x = dimension_one;
-            tp.y = this->display_height_ - dimension_two;
+            tp.x = dimension_two;
+            tp.y = dimension_one;
             break;
           case ROTATE_180_DEGREES:
             tp.x = this->display_width_ - dimension_one;
