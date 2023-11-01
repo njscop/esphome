@@ -1,4 +1,4 @@
-#include "Wire.h"
+#include "Wire.c"
 #include "esphome/core/log.h"
 #include "esphome/components/i2c/i2c_bus.h"
 #include "gt911.h"
